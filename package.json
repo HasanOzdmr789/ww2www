@@ -36,6 +36,6 @@
     "wagmi": "^1.0.9"
   },
   "devDependencies": {
-    "@types/react": "^18.2.9"
+    "@types/react": "18.2.15"
   }
 }

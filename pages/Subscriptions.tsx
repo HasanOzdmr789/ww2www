@@ -46,7 +46,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x100000000000000
+          0x1000000000
         </>
       ),
     },
@@ -55,7 +55,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x1122222222230
+          0x2000000000
         </>
       ),
     },
@@ -115,7 +115,7 @@ const DropdownList2: React.FC = () => {
     <div className="relative inline-block ml-5">
       <Select
         value={options.find((option) => option.value === selectedOption)}
-        onChange={ () => handleSelect}
+        onChange={() => handleSelect}
         options={options}
         className="text-base"
       />
@@ -191,7 +191,7 @@ const UpcomingPayments: React.FC = () => {
   const nearestDate = upcomingPaymentsData.reduce((prev, current) => {
     return prev.daysLeft < current.daysLeft ? prev : current;
   }).daysLeft;
- 
+
   return (
     <div className="flex justify-center mt-5">
       <div className="w-full max-w-3xl bg-white shadow-md rounded-lg overflow-hidden">

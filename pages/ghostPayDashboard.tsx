@@ -46,7 +46,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x100000000000000
+          0x1000000000
         </>
       ),
     },
@@ -55,7 +55,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x1122222222230
+          0x2000000000
         </>
       ),
     },
