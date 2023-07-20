@@ -9,7 +9,7 @@ const Profile: React.FC = () => {
   const router = useRouter();
   const [username, setUsername] = useState("asdfa");
   const [email, setEmail] = useState("asfdaf");
-  const [birthDate, setBirthDate] = useState("12312");
+  const [birthDate, setBirthDate] = useState("03.11.2001");
   const [country, setCountry] = useState("Turkey");
 
   const handleEditClick = () => {

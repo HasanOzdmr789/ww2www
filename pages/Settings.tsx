@@ -110,14 +110,14 @@ const Settings: React.FC = () => {
     {
       id: 1,
       date: new Date(2023, 4, 31),
-      amount: 50.0,
+      amount: 23.99,
       description: "Purchase at XYZ Store",
     },
     {
       id: 2,
       date: new Date(2023, 4, 30),
-      amount: 10.0,
-      description: "Subscription renewal",
+      amount: 11.99,
+      description: "Subscription renewal from SecOh.com",
     },
   ];
 

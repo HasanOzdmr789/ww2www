@@ -1,8 +1,8 @@
 const profileData = {
-  username: "Ghost",
-  email: "Pay",
-  password: "123123",
-  birthDate: "12312",
+  username: "ghost0x9311",
+  email: "melkecelioglu@gmail.com",
+  password: " ", //#hashed
+  birthDate: "03.11.2001",
   country: "Türkiye",
 };
 

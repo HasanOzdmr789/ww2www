@@ -22,6 +22,7 @@ import { SiBinance, SiNetflix } from "react-icons/si";
 import { BiSupport } from "react-icons/bi";
 import Image from "next/image";
 import logo from "/src/images/logo.png";
+import { numberToHex } from "viem";
 
 const DropdownList1: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -37,7 +38,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x0000000000
+          0x8732134242320984923
         </>
       ),
     },
@@ -46,7 +47,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x1000000000
+          0x2879332332483979073
         </>
       ),
     },
@@ -55,7 +56,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x2000000000
+          0x07621732176231432784
         </>
       ),
     },
@@ -125,15 +126,15 @@ const DropdownList2: React.FC = () => {
 
 const PortfolioSection: React.FC = () => {
   const tokens = [
-    { name: "Bitcoin", price: "$25651", balance: "10", icon: <FaBitcoin /> },
-    { name: "Ethereum", price: "$1553", balance: "20", icon: <FaEthereum /> },
-    { name: "USDT", price: "$1.001", balance: "30", icon: <FaDollarSign /> },
+    { name: "Bitcoin", price: "$30.220", balance: "0.0324", icon: <FaBitcoin /> },
+    { name: "Ethereum", price: "$1916", balance: "0.05", icon: <FaEthereum /> },
+    { name: "USDT", price: "$1.0001426", balance: "0.01", icon: <FaDollarSign /> },
   ];
 
   const portfolioValue = tokens.reduce(
     (total, token) =>
-      total +
-      parseInt(token.price.replace(/\$/g, "")) * parseInt(token.balance),
+      total + 
+      (parseFloat((token.price.replace(/\$/g, ""))) * parseFloat((token.balance))),
     0
   );
 
@@ -171,7 +172,7 @@ const PortfolioSection: React.FC = () => {
         </div>
         <div className="bg-gray-200 px-4 py-3 flex justify-between">
           <div className="text-lg font-bold">Portfolio Value</div>
-          <div className="text-lg font-bold">${portfolioValue}</div>
+          <div className="text-lg font-bold">${portfolioValue.toFixed(3)}</div>
         </div>
         <div>
           <Platforms />

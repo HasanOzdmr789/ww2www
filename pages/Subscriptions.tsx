@@ -18,7 +18,7 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
-import { SiBinance, SiNetflix } from "react-icons/si";
+import { SiBinance, SiTether,SiNetflix } from "react-icons/si";
 import { BiSupport } from "react-icons/bi";
 import Image from "next/image";
 import logo from "src/images/logo.png";
@@ -37,7 +37,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x0000000000
+          0x8732134242320984923
         </>
       ),
     },
@@ -46,7 +46,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x1000000000
+          0x2879332332483979073
         </>
       ),
     },
@@ -55,7 +55,7 @@ const DropdownList1: React.FC = () => {
       label: (
         <>
           <FaWallet className="mr-1" />
-          0x2000000000
+          0x07621732176231432784
         </>
       ),
     },
@@ -82,6 +82,15 @@ const DropdownList2: React.FC = () => {
 
   const options = [
     { value: "default", label: " " },
+    {
+      value: "tether",
+      label: (
+        <>
+          <SiTether className="mr-1" />
+          USDT
+        </>
+      ),
+    },
     {
       value: "eth",
       label: (
@@ -130,7 +139,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-15",
     paymentPeriod: "Monthly",
     paymentDate: "2023-08-15",
-    price: "$50",
+    price: "$12",
     daysLeft: 26,
     icon: <FaYoutube />,
   },
@@ -140,7 +149,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-17",
     paymentPeriod: "Monthly",
     paymentDate: "2023-08-17",
-    price: "$40",
+    price: "$14",
     daysLeft: 28,
     icon: <FaTwitter />,
   },
@@ -150,7 +159,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-17",
     paymentPeriod: "Monthly",
     paymentDate: "2023-08-18",
-    price: "$40",
+    price: "$13",
     daysLeft: 29,
     icon: <FaTwitch />,
   },
@@ -160,7 +169,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-01",
     paymentPeriod: "Monthly",
     paymentDate: "2023-08-01",
-    price: "$40",
+    price: "$23",
     daysLeft: 12,
     icon: <SiNetflix />,
   },
@@ -170,7 +179,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-23",
     paymentPeriod: "Monthly",
     paymentDate: "2023-07-23",
-    price: "$40",
+    price: "$9",
     daysLeft: 3,
     icon: <FaAmazon />,
   },
@@ -180,7 +189,7 @@ const upcomingPaymentsData = [
     paymentStartDate: "2023-06-27",
     paymentPeriod: "Monthly",
     paymentDate: "2023-07-28",
-    price: "$40",
+    price: "$5",
     daysLeft: 8,
     icon: <FaLinkedinIn />,
   },
