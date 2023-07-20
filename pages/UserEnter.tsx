@@ -16,7 +16,6 @@ const UserEntryPage: React.FC = () => {
   const router = useRouter();
 
   const handleSigninSubmit = async (formData: any) => {
-    // Perform signin form submission logic
     if (!formData.mail || !formData.password) {
       console.log("ERROR");
       alert("Login is unsuccessful due to missing parts");
@@ -41,7 +40,6 @@ const UserEntryPage: React.FC = () => {
   };
 
   const handleSignupSubmit = async (formData: any) => {
-    // Perform signup form submission logic
     const response = await fetch("/api/signupForm", {
       method: "POST",
       body: JSON.stringify(formData),
@@ -62,20 +60,18 @@ const UserEntryPage: React.FC = () => {
   const handleLoginSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoginSubmitted(true);
-    // Call the signin form submission function
     handleSigninSubmit({ mail: loginUsername, password: loginPassword });
   };
 
   const submitSignupForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSignupSubmitted(true);
-    // Call the signup form submission function
     handleSignupSubmit({
       name: signupUsername,
-      surname: "", // Add the surname value if applicable
+      surname: "",
       mail: signupUsername,
       password: signupPassword,
-      metamaskid: "", // Add the metamaskid value if applicable
+      metamaskid: "",
     });
   };
 

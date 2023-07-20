@@ -51,10 +51,10 @@ const Sidebar: React.FC = () => {
       </div>
       <div className="flex flex-col items-center mt-auto mb-5">
         <div className="flex space-x-2">
-          <a href="#">
+          <a href="https://twitter.com/melkecelioglu">
             <FaTwitter className="text-white opacity-75 hover:opacity-100" />
           </a>
-          <a href="#">
+          <a href="https://github.com/melkecelioglu/ghostPay">
             <FaGithub className="text-white opacity-75 hover:opacity-100" />
           </a>
         </div>
@@ -68,7 +68,7 @@ const Support: React.FC = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (event: { preventDefault: () => void; }) => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     setName("");
     setEmail("");

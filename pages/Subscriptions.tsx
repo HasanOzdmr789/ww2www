@@ -129,9 +129,9 @@ const upcomingPaymentsData = [
     orderDate: "2023-06-10",
     paymentStartDate: "2023-06-15",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-15",
+    paymentDate: "2023-08-15",
     price: "$50",
-    daysLeft: 5,
+    daysLeft: 26,
     icon: <FaYoutube />,
   },
   {
@@ -139,9 +139,9 @@ const upcomingPaymentsData = [
     orderDate: "2023-06-12",
     paymentStartDate: "2023-06-17",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-17",
+    paymentDate: "2023-08-17",
     price: "$40",
-    daysLeft: 7,
+    daysLeft: 28,
     icon: <FaTwitter />,
   },
   {
@@ -149,45 +149,44 @@ const upcomingPaymentsData = [
     orderDate: "2023-06-12",
     paymentStartDate: "2023-06-17",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-17",
+    paymentDate: "2023-08-18",
     price: "$40",
-    daysLeft: 7,
+    daysLeft: 29,
     icon: <FaTwitch />,
   },
   {
     platform: "Netflix",
-    orderDate: "2023-06-12",
-    paymentStartDate: "2023-06-17",
+    orderDate: "2023-06-01",
+    paymentStartDate: "2023-06-01",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-17",
+    paymentDate: "2023-08-01",
     price: "$40",
-    daysLeft: 7,
+    daysLeft: 12,
     icon: <SiNetflix />,
   },
   {
     platform: "Amazon",
-    orderDate: "2023-06-12",
-    paymentStartDate: "2023-06-17",
+    orderDate: "2023-06-21",
+    paymentStartDate: "2023-06-23",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-17",
+    paymentDate: "2023-07-23",
     price: "$40",
-    daysLeft: 7,
+    daysLeft: 3,
     icon: <FaAmazon />,
   },
   {
     platform: "Linkedin",
-    orderDate: "2023-06-12",
-    paymentStartDate: "2023-06-17",
+    orderDate: "2023-06-25",
+    paymentStartDate: "2023-06-27",
     paymentPeriod: "Monthly",
-    paymentDate: "2023-07-17",
+    paymentDate: "2023-07-28",
     price: "$40",
-    daysLeft: 7,
+    daysLeft: 8,
     icon: <FaLinkedinIn />,
   },
 ];
 
 const UpcomingPayments: React.FC = () => {
-  // find nearest date from upcomingPaymentsData with reduce methdod
   const nearestDate = upcomingPaymentsData.reduce((prev, current) => {
     return prev.daysLeft < current.daysLeft ? prev : current;
   }).daysLeft;
@@ -279,10 +278,10 @@ const Sidebar: React.FC = () => {
       </div>
       <div className="flex flex-col items-center mt-auto mb-5">
         <div className="flex space-x-2">
-          <a href="#">
+          <a href="https://twitter.com/melkecelioglu">
             <FaTwitter className="text-white opacity-75 hover:opacity-100" />
           </a>
-          <a href="#">
+          <a href="https://github.com/melkecelioglu/ghostPay">
             <FaGithub className="text-white opacity-75 hover:opacity-100" />
           </a>
         </div>
