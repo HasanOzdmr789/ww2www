@@ -21,7 +21,7 @@ const planInfo: React.FC = () => {
 
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-2">
-                What is the Spotif Premium Student Plan?
+                What is the Spotify Premium Student Plan?
               </h2>
               <p>
                 Spotify Premium Student Plan, students at college or university
@@ -67,7 +67,7 @@ const planInfo: React.FC = () => {
                   href="https://support.spotify.com/tr-tr/article/premium-student/"
                   className="text-blue-500"
                 >
-                  Visit the Spotify Student Premium Page.
+                  visit the Spotify Student Premium Page.
                 </Link>{" "}
               </p>
             </div>
@@ -88,7 +88,7 @@ const planInfo: React.FC = () => {
                   href="https://support.spotify.com/tr-tr/article/premium-student/"
                   className="text-blue-500"
                 >
-                  Learn how to identify that
+                  learn how to identify that
                 </Link>{" "}
                 you{`'`}re a student.
               </p>
@@ -108,7 +108,7 @@ const planInfo: React.FC = () => {
                   href="https://support.spotify.com/tr-tr/article/premium-student/"
                   className="text-blue-500"
                 >
-                  Frequently asked Questions
+                  Frequently Asked Questions
                 </Link>{" "}
                 visit our page.
               </p>

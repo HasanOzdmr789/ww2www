@@ -142,7 +142,7 @@ const UserEntryPage: React.FC = () => {
                 Login
               </button>
               <p
-                className="text-blue-500 mt-2 cursor-pointer"
+                className="text-blue-500 mt-2 cursor-pointer text-center"
                 onClick={handleCreateAccountClick}
               >
                 Create an Account
@@ -182,7 +182,7 @@ const UserEntryPage: React.FC = () => {
                 Sign Up
               </button>
               <p
-                className="text-blue-500 mt-2 cursor-pointer"
+                className="text-blue-500 mt-2 cursor-pointer text-center"
                 onClick={handleAlreadyHaveAccountClick}
               >
                 I already have an account

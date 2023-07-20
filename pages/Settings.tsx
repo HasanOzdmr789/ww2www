@@ -131,7 +131,7 @@ const Settings: React.FC = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="mb-6">
             <h2 className="text-lg font-bold mb-2">Profile Information</h2>
-            <p className="mb-2">
+            <p className="mb-4">
               <span className="font-bold">Username:</span>{" "}
               {tempUsername !== "" ? (
                 <input
@@ -149,7 +149,7 @@ const Settings: React.FC = () => {
                 />
               )}
             </p>
-            <p className="mb-2">
+            <p className="mb-4">
               <span className="font-bold">Password:</span>{" "}
               {tempPassword !== "" ? (
                 <input
@@ -184,7 +184,7 @@ const Settings: React.FC = () => {
                 {showPassword ? "Hide" : "Show"}
               </button>
             </p>
-            <p className="mb-2">
+            <p className="mb-4">
               <span className="font-bold">Email:</span>{" "}
               {tempEmail !== "" ? (
                 <input
