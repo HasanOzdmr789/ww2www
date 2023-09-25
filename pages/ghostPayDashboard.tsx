@@ -323,6 +323,12 @@ const DashboardPage: React.FC = () => {
             <DropdownList1 />
             <DropdownList2 />
           </h1>
+           <button
+                type="submit"
+                className="bg-green-500 text-white px-3 py-2 mb-8 rounded-lg w-100"
+              >
+                Logout
+          </button>
         </div>
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className=" p-4 rounded-lg mb-6">
