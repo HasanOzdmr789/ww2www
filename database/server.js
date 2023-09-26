@@ -98,6 +98,14 @@ app.post("/userData", async (req, res) => {
   } catch (error) { }
 });
 
+app.get('/logout', isAuthenticated, function (req, res) {
+  console.log('User Id', req.user._id);
+  user.findByIdAndRemove(req.user._id, function (err) {
+    if (err) res.send(err);
+    res.json({ message: 'User Deleted!' });
+  })
+});
+
 app.listen(port, () => {
   console.log(`Server running ${port}`);
 });
